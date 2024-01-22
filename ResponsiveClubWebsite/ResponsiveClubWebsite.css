@@ -1,0 +1,114 @@
+    /* 
+    background-color: #cecece;
+    background-color: #112151;
+    */
+
+body {
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        margin: 0;
+        background-color:#cecece;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 10%;
+    background-color: #112151;
+    }
+    .bar p {
+        display: inline-block;
+        color: #cecece;
+        padding: 1rem 1rem;
+        text-decoration: underline;
+    }
+    @media only screen and (max-width: 899px) {
+        .bar-image {
+            display: none;
+        }
+    }
+    
+    .bar p:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+.intro {
+    height: 30rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    background-position: center;
+    background-repeat: none;
+}
+.intro h1 {
+    color: #cecece;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #112151;
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.summary .content {
+    margin: auto;
+    color: #112151;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo {
+    flex: 1; /* Distribute equal width to each photo */
+    margin: 10px; /* Add margin for spacing between photos */
+}
+
+.photo img {
+    max-width: 100%; /* Ensure the image is responsive */
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .photos {
+        flex-direction: column; /* Stack photos vertically on smaller screens */
+    }
+}
+
+.testimonial {
+    display: flex;
+    background-color: #112151;
+    color: #cecece;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.testimonal .content {
+    height: 10rem;
+    padding: .5rem;
+}
+
+.meetup {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.meetup h1 {
+    color: #112151;
+    text-align: center;
+}
+.meetup img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
